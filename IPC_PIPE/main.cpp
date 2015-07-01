@@ -31,6 +31,7 @@ int main(int argc, const char * argv[]) {
     if (pipe(pipe_fid) < 0) {
         cout << "pipe error" << endl;
     }
+    
     char operatorbuf[16] ={0};
     //创建子进程
     pid_t pid = fork();
